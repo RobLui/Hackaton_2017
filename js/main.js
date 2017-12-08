@@ -5,20 +5,27 @@ function checkKey(e) {
     e = e || window.event;
 
     if (e.keyCode == '38') {
-        // up arrow
-        console.log("up arrow");
+        console.log("up arrow pressed");
     }
     else if (e.keyCode == '40') {
-        // down arrow
-        console.log("down arrow");
+        console.log("down arrow pressed");
     }
     else if (e.keyCode == '37') {
-        // left arrow
-        console.log("left arrow");
+        console.log("left arrow pressed");
     }
     else if (e.keyCode == '39') {
-        // right arrow
-        console.log("Right arrow");
+        console.log("right arrow pressed");
     }
-
+    else if (e.keyCode == 87)
+    {
+        console.log("w key pressed")
+    }
+    else if (e.keyCode == 65)
+    {
+        console.log("a key pressed")
+    }
+    else if (e.keyCode == 83)
+    {
+        console.log("s key pressed")
+    }
 }
