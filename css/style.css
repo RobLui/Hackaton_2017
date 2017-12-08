@@ -1,11 +1,11 @@
 body {
-    /*background: blue;*/
+    background: blue;
 }
 .m-top {
     margin-top:15em;
 }
 .start-text {
-    text-center;
+    text-align: center;
     width:100%;
     margin-left:30%;
 }
