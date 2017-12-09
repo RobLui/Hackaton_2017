@@ -27,6 +27,12 @@ body {
 
 .class-100 {
     width: 100%;
+    display: block;
+}
+
+.class-50 {
+    width: 50%;
+    display: block;
 }
 
 .class-33 {
