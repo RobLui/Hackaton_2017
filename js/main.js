@@ -1,3 +1,4 @@
+var checkAnswer;
 $(document).ready(function() {
 
 
@@ -11,8 +12,9 @@ $(document).ready(function() {
 
 
   var failCount = 0,
-    score = 0;
-  var correctAnswer = 0,
+    score = 0,
+    correctAnswer = 0,
+    answer,firstCheck = true,
     arrowPicked = false;
 
   function playAudio() {
@@ -138,27 +140,34 @@ $(document).ready(function() {
       correctAnswer = 4;
       arrowPicked = true;
     }
-
+    firstCheck = true;
     $('.imageclass').append("<img src='" + path + imgs[i] + "'>").hide().fadeIn(deltaT);
   }
 
 
-  function checkAnswer(answer) {
-    if (correctAnswer !== 0) {
+  checkAnswer = function() {
       if (answer === correctAnswer) {
         // get reaction time
       } else {
-        ++failCount;
-        if (failCount === 10) {
-          // end game
-        }
+          if(firstCheck){
+             ++failCount;
+             if(failCount == 10) {
+                 console.log(firstCheck);
+               localStorage.score = score;
+               location.href = "beoordeling.html";
+             }
+             firstCheck = false;
+          }
+
+
+
       }
-    }
-  }
+      console.log(failCount);
+  };
 
   window.setInterval(function() {
     deltaT = deltaT * (1 - speedIncrease);
-    console.log(deltaT);
+    // console.log(deltaT);
     $('.imageclass img').remove();
     new testRandomImage();
     var idx = Math.floor(Math.random() * arr.length);
@@ -188,19 +197,26 @@ function checkKey(e) {
     console.log("down arrow pressed");
   } else if (e.keyCode == '70') {
     // LEFT
-    checkAnswer(3);
+    // checkAnswer(3);
+    answer = 3;
+checkAnswer();
     console.log("left arrow pressed");
   } else if (e.keyCode == '71') {
     // RIGHT
-    checkAnswer(4);
+    // checkAnswer(4);
+    answer = 4;
+    checkAnswer();
     console.log("right arrow pressed");
   } else if (e.keyCode == 87 || e.keyCode == 91) {
     // BLAUW
-    checkAnswer(2);
+    // checkAnswer(2);
+    answer = 2;
+    checkAnswer();
     console.log("w or z key pressed")
   } else if (e.keyCode == 65 || e.keyCode == 81) {
     // ROOD
-    checkAnswer(1);
+    // checkAnswer(1);
+    answer = 1;checkAnswer();
     console.log("a or q key pressed")
   } else if (e.keyCode == 83) {
     console.log("s key pressed");
