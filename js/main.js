@@ -32,32 +32,26 @@ function checkKey(e) {
     }
 }
 
-imgArray[25] = new Image();
-imgArray[3].src = '';
+// window.onload = choosePic;
 
-var imgArray = [
-    "./design/elementen/images/1.png",
-    "./design/elementen/images/2.png",
-    "./design/elementen/images/1.png",
-    "./design/elementen/images/1.png",
-    "./design/elementen/images/1.png",
-    "./design/elementen/images/1.png",
-    "./design/elementen/images/1.png",
-    "./design/elementen/images/1.png",
+// var myPix = new Array("/images/lion.jpg","images/tiger.jpg","images/bear.jpg");
+//
+// function choosePic() {
+//     var randomNum = Math.floor(Math.random() * myPix.length);
+//     document.getElementById("myPicture").src = myPix[randomNum];
+// }
+//
+// function getRandomImage(imgAr, path) {
+//     path = path || 'design/elementen/images/'; // default path here
+//     var num = Math.floor( Math.random() * imgAr.length );
+//     var img = imgAr[ num ];
+//     var imgStr = '<img src="' + path + img + '" alt = "">';
+//     document.write(imgStr); document.close();
+// }
 
-];
 
-
-
-function getRandomImage(imgAr, path) {
-    path = path || 'design/elementen/images/'; // default path here
-    var num = Math.floor( Math.random() * imgAr.length );
-    var img = imgAr[ num ];
-    var imgStr = '<img src="' + path + img + '" alt = "">';
-    document.write(imgStr); document.close();
-}
-
-for(i= 0; i < 10; ) {
-    setTimeout(function(){ getRandomImage() }, 4000);
-
+var path = '../design/elementen/images/',
+    imgs = ['1.png','2.png','3.png'],
+    i = Math.floor(Math.random()*imgs.length);
+$('.el').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
 }

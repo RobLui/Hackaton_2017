@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3c1f149-3627-4cbe-97cb-7d37b9e6cd7e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/design/elementen/pijl-boven.png" afterPath="$PROJECT_DIR$/design/elementen/images/pijl-boven.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/design/elementen/pijl-links.png" afterPath="$PROJECT_DIR$/design/elementen/images/pijl-links.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/design/elementen/pijl-onder.png" afterPath="$PROJECT_DIR$/design/elementen/images/pijl-onder.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/design/elementen/pijl-rechts.png" afterPath="$PROJECT_DIR$/design/elementen/images/pijl-rechts.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/1.png" afterPath="$PROJECT_DIR$/design/elementen/images/1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/10.png" afterPath="$PROJECT_DIR$/design/elementen/images/10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/11.png" afterPath="$PROJECT_DIR$/design/elementen/images/11.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/12.png" afterPath="$PROJECT_DIR$/design/elementen/images/12.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/13.png" afterPath="$PROJECT_DIR$/design/elementen/images/13.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/14.png" afterPath="$PROJECT_DIR$/design/elementen/images/14.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/15.png" afterPath="$PROJECT_DIR$/design/elementen/images/15.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/16.png" afterPath="$PROJECT_DIR$/design/elementen/images/16.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/17.png" afterPath="$PROJECT_DIR$/design/elementen/images/17.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/18.png" afterPath="$PROJECT_DIR$/design/elementen/images/18.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/19.png" afterPath="$PROJECT_DIR$/design/elementen/images/19.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/2.png" afterPath="$PROJECT_DIR$/design/elementen/images/2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/20.png" afterPath="$PROJECT_DIR$/design/elementen/images/20.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/21.png" afterPath="$PROJECT_DIR$/design/elementen/images/21.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/3.png" afterPath="$PROJECT_DIR$/design/elementen/images/3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/6.png" afterPath="$PROJECT_DIR$/design/elementen/images/6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/7.png" afterPath="$PROJECT_DIR$/design/elementen/images/7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/8.png" afterPath="$PROJECT_DIR$/design/elementen/images/8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/effect/9.png" afterPath="$PROJECT_DIR$/design/elementen/images/9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beoordeling.html" afterPath="$PROJECT_DIR$/beoordeling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/start.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knoppen.html" afterPath="$PROJECT_DIR$/knoppen.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pijlen.html" afterPath="$PROJECT_DIR$/pijlen.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.html" afterPath="$PROJECT_DIR$/start.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="450">
+              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -103,10 +75,10 @@
       <list>
         <option value="$PROJECT_DIR$/beoordeling.html" />
         <option value="$PROJECT_DIR$/knoppen.html" />
-        <option value="$PROJECT_DIR$/start.html" />
         <option value="$PROJECT_DIR$/pijlen.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/start.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -235,28 +207,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elementen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackaton_2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hackaton_2017" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -361,12 +311,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512776689854</updated>
-      <workItem from="1512776691055" duration="4815000" />
+      <workItem from="1512776691055" duration="5354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4815000" />
+    <option name="totallyTimeSpent" value="5354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
@@ -442,10 +392,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="330">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beoordeling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -466,26 +424,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beoordeling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="252">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding />
         </state>
       </provider>
