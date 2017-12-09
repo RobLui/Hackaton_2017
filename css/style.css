@@ -17,16 +17,8 @@ body {
     color: gold;
 }
 
-.float-left {
-    float: left;
-}
-.m-top {
-    margin-top: 10em;
-    text-align: center;
-}
-
-.start-text, .text-center{
-    text-align: center;
+.green {
+    color: #336600;
 }
 
 .knop-blauw {
@@ -41,6 +33,28 @@ body {
     border-radius: 50%;
     height: 15em;
     width: 15em;
+}
+
+.background-red {
+    background: red;
+    border-radius: 50%;
+}
+
+.background-blue {
+    background: blue;
+    border-radius: 50%;
+}
+
+.float-left {
+    float: left;
+}
+.m-top {
+    margin-top: 10em;
+    text-align: center;
+}
+
+.start-text, .text-center{
+    text-align: center;
 }
 
 .class-100 {
@@ -69,7 +83,6 @@ body {
 
 .dosis-class {
     text-align: center;
-    color: #336600;
     font-size: 5em;
 }
 
@@ -87,7 +100,3 @@ body {
     font-size: 3em;
 }
 
-.background-red {
-    background: red;
-    border-radius: 50%;
-}
