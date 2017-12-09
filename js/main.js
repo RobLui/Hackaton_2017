@@ -30,8 +30,10 @@ $( document ).ready(function() {
         i = Math.floor(Math.random()*imgs.length);
       $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
     }
-
-    testRandomImage();
+    window.setInterval(function(){
+        $('.imageclass img').remove();
+        new testRandomImage();
+    }, 2000);
 
 });
 //CHECK ON KEYS PRESSED
@@ -70,7 +72,7 @@ function checkKey(e) {
     {
         // START BUTTON
         console.log("s key pressed");
-        
+
         if(window.location.href.indexOf("index.html") > -1) {
             location.href = 'pijlen.html';
         }
