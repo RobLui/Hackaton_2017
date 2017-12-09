@@ -70,6 +70,9 @@ function checkKey(e) {
     {
         // START BUTTON
         console.log("s key pressed");
-        location.href = 'pijlen.html';
+        
+        if(window.location.href.indexOf("index.html") > -1) {
+            location.href = 'pijlen.html';
+        }
     }
 }

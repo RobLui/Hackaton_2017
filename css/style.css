@@ -5,6 +5,9 @@
 @import "../fonts/Dosis/Dosis-Regular.ttf";
 @import "../fonts/Dosis/Dosis-SemiBold.ttf";
 
+* {
+    cursor: none;
+}
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
@@ -61,6 +64,7 @@ body {
     color: #336600;
     font-size: 5em;
 }
+
 .imageclass img {
     height: 30em;
     width: 30em;
