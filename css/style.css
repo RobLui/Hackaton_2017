@@ -54,11 +54,7 @@ body {
     color: #336600;
     font-size: 5em;
 }
-img {
-    height: 50%;
-    width: 50%;
-}
-.imageclass {
-    max-height: 45em;
-    max-width: 45em;
+.imageclass img {
+    height: 30em;
+    width: 30em;
 }
