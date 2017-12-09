@@ -63,7 +63,7 @@ $( document ).ready(function() {
         // DOWN
         console.log("down arrow pressed");
     }
-    else if (e.keyCode == '70g') {
+    else if (e.keyCode == '70') {
         // LEFT
         console.log("left arrow pressed");
     }
