@@ -10,7 +10,7 @@ $(document).ready(function() {
   var previousQuestion = -1;
 
 
-  var failCout = 0,
+  var failCount = 0,
     score = 0;
   var correctAnswer = 0,
     arrowPicked = false;
@@ -93,7 +93,7 @@ $(document).ready(function() {
         x.reset();
         update();
     }
-  
+
   function testRandomImage() {
 
     var path = 'design/elementen/images/',
@@ -148,8 +148,8 @@ $(document).ready(function() {
       if (answer === correctAnswer) {
         // get reaction time
       } else {
-        ++failCout;
-        if (failCout === 10) {
+        ++failCount;
+        if (failCount === 10) {
           // end game
         }
       }
