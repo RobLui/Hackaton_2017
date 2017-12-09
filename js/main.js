@@ -17,7 +17,7 @@ $(document).ready(function() {
     answer,firstCheck = true,
     arrowPicked = false;
 
-if(document.getElementById("beoordeling").length > 0){
+if(document.getElementById("beoordeling")){
     score = score/score+10 *100;
     var status = (score>50)?"wakker":"te moe";
     var traffic = (score>50)?"auto":(score>30)?"bike":"te-voet";
