@@ -34,8 +34,9 @@ $( document ).ready(function() {
         i = Math.floor(Math.random()*imgs.length);
         $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
     }
-    $("#count_num").delay(1000).queue(function() {
-        $('#count_num').html("2").delay(1000).queue(function() {
+
+    $('#count_num').delay(1000).queue(function() {
+        $('#count_num').html("2").delay(0).queue(function() {
             $('#count_num').html("1")
         });
     });
@@ -46,9 +47,10 @@ $( document ).ready(function() {
         var idx = Math.floor(Math.random() * arr.length);
         // console.log(arr[idx]);
         $('.imageclass img').addClass(arr[idx]);
-    }, 2000);
+    }, 3000);
     playAudio();
 });
+
     //CHECK ON KEYS PRESSED
     document.onkeydown = checkKey;
 
