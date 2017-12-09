@@ -8,10 +8,20 @@
 * {
     cursor: none;
 }
+
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
 }
+
+.red {
+    color: red;
+}
+
+.gold {
+    color: gold;
+}
+
 .float-left {
     float: left;
 }
