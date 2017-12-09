@@ -1,14 +1,45 @@
+@import "/fonts/Dosis/Dosis-Bold.ttf";
+@import "/fonts/Dosis/Dosis-ExtraBold.ttf";
+@import "/fonts/Dosis/Dosis-ExtraLight.ttf";
+@import "/fonts/Dosis/Dosis-Medium.ttf";
+@import "/fonts/Dosis/Dosis-Regular.ttf";
+@import "/fonts/Dosis/Dosis-SemiBold.ttf";
+
 .m-top {
-    margin-top:15em;
+    font-family: 'Dosis', sans-serif;
+    margin-top: 10em;
+    text-align: center;
 }
 .start-text {
     text-align: center;
-    width:100%;
-    margin-left:30%;
 }
+
 .knop-groen {
-    background: green;
+    background: #336600;
     border-radius: 50%;
-    height:15em;
-    width:15em;
+    height: 15em;
+    width: 15em;
+}
+.class-100 {
+    width: 100%;
+}
+
+.class-33 {
+    width: 33%;
+    float:left;
+}
+
+.top-2 {
+    text-align: left;
+}
+
+.top-half {
+    margin-top: 10%;
+}
+
+.dosis-class {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: #336600;
+    font-size: 5em;
 }
