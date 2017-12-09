@@ -137,7 +137,7 @@ $(document).ready(function() {
   }
 
   
-    function checkAnswer(answer){
+    var x = function checkAnswer(answer){
         if(correctAnswer!== 0){
             if(answer === correctAnswer){
                 // get reaction time
