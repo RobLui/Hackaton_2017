@@ -18,8 +18,15 @@ body {
     text-align: center;
 }
 
-.knop-groen {
-    background: #336600;
+.knop-blauw {
+    background: blue;
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+}
+
+.knop-rood {
+    background: red;
     border-radius: 50%;
     height: 15em;
     width: 15em;

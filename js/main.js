@@ -59,7 +59,6 @@ function checkKey(e) {
     else if (e.keyCode == 87 || e.keyCode == 91)
     {
         // BLAUW
-
         console.log("w or z key pressed")
     }
     else if (e.keyCode == 65 || e.keyCode == 81)
