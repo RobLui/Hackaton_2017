@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    var arr = ['red','green','blue'];
+
     function testRandomImage() {
 
         var path = 'design/elementen/images/',
@@ -33,7 +35,10 @@ $( document ).ready(function() {
     window.setInterval(function(){
         $('.imageclass img').remove();
         new testRandomImage();
-        $('.imageclass img').addClass("background-red");
+        // $('.imageclass img').addClass("background-red");
+        var idx =    Math.floor(Math.random() * arr.length);
+        $('.imageclass img').addClass("background-blue");
+
     }, 2000);
 
 });
