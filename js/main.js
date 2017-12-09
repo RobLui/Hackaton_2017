@@ -34,11 +34,11 @@ $( document ).ready(function() {
         i = Math.floor(Math.random()*imgs.length);
         $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
     }
-    // $("#count_num").delay(1000).queue(function() {
-    //     $('#count_num').html("2").delay(1000).queue(function() {
-    //         $('#count_num').html("1")
-    //     });
-    // });
+    $("#count_num").delay(1000).queue(function() {
+        $('#count_num').html("2").delay(1000).queue(function() {
+            $('#count_num').html("1")
+        });
+    });
 
     window.setInterval(function(){
         $('.imageclass img').remove();
@@ -63,11 +63,11 @@ $( document ).ready(function() {
         // DOWN
         console.log("down arrow pressed");
     }
-    else if (e.keyCode == '37') {
+    else if (e.keyCode == '70g') {
         // LEFT
         console.log("left arrow pressed");
     }
-    else if (e.keyCode == '39') {
+    else if (e.keyCode == '71') {
         // RIGHT
         console.log("right arrow pressed");
     }

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3c1f149-3627-4cbe-97cb-7d37b9e6cd7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beoordeling.html" afterPath="$PROJECT_DIR$/beoordeling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pijlen.html" afterPath="$PROJECT_DIR$/pijlen.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,7 +27,7 @@
             <state relative-caret-position="0">
               <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
               <folding>
-                <marker date="1512798708000" expanded="false" signature="1416:1421" ph="{...}" />
+                <marker date="1512799538000" expanded="false" signature="1401:1406" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -479,7 +476,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
           <folding>
-            <marker date="1512798708000" expanded="false" signature="1416:1421" ph="{...}" />
+            <marker date="1512799538000" expanded="false" signature="1401:1406" ph="{...}" />
           </folding>
         </state>
       </provider>
