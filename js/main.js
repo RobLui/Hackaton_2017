@@ -56,15 +56,16 @@ function checkKey(e) {
         // RIGHT
         console.log("right arrow pressed");
     }
-    else if (e.keyCode == 87)
+    else if (e.keyCode == 87 || e.keyCode == 91)
     {
         // BLAUW
-        console.log("w key pressed")
+
+        console.log("w or z key pressed")
     }
-    else if (e.keyCode == 65)
+    else if (e.keyCode == 65 || e.keyCode == 81)
     {
         // ROOD
-        console.log("a key pressed")
+        console.log("a or q key pressed")
     }
     else if (e.keyCode == 83)
     {
