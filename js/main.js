@@ -18,7 +18,7 @@ $(document).ready(function() {
     arrowPicked = false;
 
 if(document.getElementById("beoordeling")){
-    score// = score/score+10 *100;
+    //score// = score/score+10 *100;
     var status = (score>50)?"wakker":"te moe";
     var traffic = (score>50)?"auto":(score>30)?"bike":"te-voet";
     document.getElementById("score").innerHTML = "<span>"+localStorage.score + "%</span> "+ status;
