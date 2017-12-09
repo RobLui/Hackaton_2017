@@ -33,7 +33,7 @@ $( document ).ready(function() {
     window.setInterval(function(){
         $('.imageclass img').remove();
         new testRandomImage();
-    }, 2000);
+    }, 5000);
 
 });
 //CHECK ON KEYS PRESSED
