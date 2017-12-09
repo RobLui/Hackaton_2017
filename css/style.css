@@ -1,9 +1,4 @@
-@import "../fonts/Dosis/Dosis-Bold.ttf";
-@import "../fonts/Dosis/Dosis-ExtraBold.ttf";
-@import "../fonts/Dosis/Dosis-ExtraLight.ttf";
-@import "../fonts/Dosis/Dosis-Medium.ttf";
-@import "../fonts/Dosis/Dosis-Regular.ttf";
-@import "../fonts/Dosis/Dosis-SemiBold.ttf";
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
 * {
     cursor: none;
@@ -78,7 +73,21 @@ body {
     font-size: 5em;
 }
 
-.imageclass img {
+.imageclass img{
     height: 30em;
     width: 30em;
+}
+
+.img-no-reload {
+    height: 20em;
+    width: 20em;
+}
+
+.biggest-font {
+    font-size: 3em;
+}
+
+.background-red {
+    background: red;
+    border-radius: 50%;
 }

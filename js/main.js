@@ -33,6 +33,7 @@ $( document ).ready(function() {
     window.setInterval(function(){
         $('.imageclass img').remove();
         new testRandomImage();
+        $('.imageclass img').addClass("background-red");
     }, 2000);
 
 });
