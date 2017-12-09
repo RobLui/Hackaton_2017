@@ -77,6 +77,8 @@ $( document ).ready(function() {
 
     var arr = ["background-red", "background-blue"];
     var audio = document.getElementById("audio");
+    var failCout = 0,score = 0;
+    var correctAnswer = 0,arrowPicked=false;
 
     function playAudio() {
         audio.play();
@@ -112,8 +114,31 @@ $( document ).ready(function() {
 
         var imgs = Math.random() <= 0.3 ? arrows : people;
         var i = Math.floor(Math.random()*imgs.length);
+        arrowPicked = false;
+        if(imgs[i] === "pijl-links.png"){
+            correctAnswer=3;
+            arrowPicked = true;
+        }
+        if(imgs[i] === "pijl-rechts.png"){
+            correctAnswer=4;
+            arrowPicked = true;
+        }
         $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
     }
+
+    function checkAnswer(answer){
+        if(correctAnswer!== 0){
+            if(answer === correctAnswer){
+                // get reaction time
+            }else{
+                ++failCout;
+                if(failCout === 10){
+                    // end game
+                }
+            }
+        }
+    }
+
     // $("#count_num").delay(1000).queue(function() {
     //     $('#count_num').html("2").delay(1000).queue(function() {
     //         $('#count_num').html("1")
@@ -125,6 +150,11 @@ $( document ).ready(function() {
         new testRandomImage();
         var idx = Math.floor(Math.random() * arr.length);
         // console.log(arr[idx]);
+        if(!arrowPicked){
+            correctAnswer = 1+idx;
+        }
+        if(imgs[i] === "pijl-links.png")correctAnswer=1;
+        if(imgs[i] === "pijl-rechts.png")correctAnswer=2;
         $('.imageclass img').addClass(arr[idx]);
     }, 2000);
     playAudio();
@@ -137,6 +167,7 @@ function checkKey(e) {
     e = e || window.event;
 
     if (e.keyCode == '38') {
+
         console.log("up arrow pressed");
     }
     else if (e.keyCode == '40') {
@@ -145,20 +176,24 @@ function checkKey(e) {
     }
     else if (e.keyCode == '70') {
         // LEFT
+        checkAnswer(3);
         console.log("left arrow pressed");
     }
     else if (e.keyCode == '71') {
         // RIGHT
+        checkAnswer(4);
         console.log("right arrow pressed");
     }
     else if (e.keyCode == 87 || e.keyCode == 91)
     {
         // BLAUW
+        checkAnswer(2);
         console.log("w or z key pressed")
     }
     else if (e.keyCode == 65 || e.keyCode == 81)
     {
         // ROOD
+        checkAnswer(1);
         console.log("a or q key pressed")
     }
     else if (e.keyCode == 83)
