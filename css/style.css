@@ -1,9 +1,9 @@
-@import "/fonts/Dosis/Dosis-Bold.ttf";
-@import "/fonts/Dosis/Dosis-ExtraBold.ttf";
-@import "/fonts/Dosis/Dosis-ExtraLight.ttf";
-@import "/fonts/Dosis/Dosis-Medium.ttf";
-@import "/fonts/Dosis/Dosis-Regular.ttf";
-@import "/fonts/Dosis/Dosis-SemiBold.ttf";
+@import "../fonts/Dosis/Dosis-Bold.ttf";
+@import "../fonts/Dosis/Dosis-ExtraBold.ttf";
+@import "../fonts/Dosis/Dosis-ExtraLight.ttf";
+@import "../fonts/Dosis/Dosis-Medium.ttf";
+@import "../fonts/Dosis/Dosis-Regular.ttf";
+@import "../fonts/Dosis/Dosis-SemiBold.ttf";
 
 body {
     font-family: 'Dosis', sans-serif;

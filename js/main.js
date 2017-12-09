@@ -31,3 +31,33 @@ function checkKey(e) {
         location.href = 'pijlen.html';
     }
 }
+
+imgArray[25] = new Image();
+imgArray[3].src = '';
+
+var imgArray = [
+    "./design/elementen/images/1.png",
+    "./design/elementen/images/2.png",
+    "./design/elementen/images/1.png",
+    "./design/elementen/images/1.png",
+    "./design/elementen/images/1.png",
+    "./design/elementen/images/1.png",
+    "./design/elementen/images/1.png",
+    "./design/elementen/images/1.png",
+
+];
+
+
+
+function getRandomImage(imgAr, path) {
+    path = path || 'design/elementen/images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+for(i= 0; i < 10; ) {
+    setTimeout(function(){ getRandomImage() }, 4000);
+
+}
