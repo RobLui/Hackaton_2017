@@ -6,7 +6,7 @@ $(document).ready(function() {
   var audio = document.getElementById("audio");
   var startDeltaT = 2000;
   var deltaT = startDeltaT;
-  var speedIncrease = 0.05;
+  var speedIncrease = 0.10;
   var questionCounter = 0;
   var previousQuestion = -1;
 
@@ -18,11 +18,11 @@ $(document).ready(function() {
     arrowPicked = false;
 
 if(document.getElementById("beoordeling")){
-    score = score/score+10 *100;
+    score// = score/score+10 *100;
     var status = (score>50)?"wakker":"te moe";
     var traffic = (score>50)?"auto":(score>30)?"bike":"te-voet";
     document.getElementById("score").innerHTML = "<span>"+localStorage.score + "%</span> "+ status;
-    document.getElementById("traffic").src= "/design/elementen/"+traffic+"png";
+    document.getElementById("traffic").src= "design/elementen/"+traffic+".png";
 }
 
   function playAudio() {
