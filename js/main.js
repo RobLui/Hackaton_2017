@@ -1,19 +1,4 @@
 $( document ).ready(function() {
- window.onload = choosePic;
-
-    var myPix = new Array("/images/lion.jpg","images/tiger.jpg","images/bear.jpg");
-
-    function choosePic() {
-        var randomNum = Math.floor(Math.random() * myPix.length);
-        document.getElementById("myPicture").src = myPix[randomNum];
-    }
-
-    function getRandomImage(imgAr, path) {
-            var num = Math.floor( Math.random() * imgAr.length );
-        var img = imgAr[ num ];
-        var imgStr = '<img src="' + path + img + '" alt = "">';
-        document.write(imgStr); document.close();
-    }
 
     function testRandomImage() {
 
