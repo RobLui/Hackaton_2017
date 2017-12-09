@@ -5,8 +5,6 @@
 @import "../fonts/Dosis/Dosis-Regular.ttf";
 @import "../fonts/Dosis/Dosis-SemiBold.ttf";
 
-* {cursor: none;}
-
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
