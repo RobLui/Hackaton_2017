@@ -12,6 +12,9 @@ body {
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
 }
+.float-left {
+    float: left;
+}
 .m-top {
     margin-top: 10em;
     text-align: center;

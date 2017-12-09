@@ -28,12 +28,12 @@ $( document ).ready(function() {
                 'pijl-rechts.png',
             ],
         i = Math.floor(Math.random()*imgs.length);
-      $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
+        $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
     }
     window.setInterval(function(){
         $('.imageclass img').remove();
         new testRandomImage();
-    }, 5000);
+    }, 2000);
 
 });
 //CHECK ON KEYS PRESSED
