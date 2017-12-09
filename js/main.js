@@ -1,4 +1,5 @@
 var checkAnswer;
+var score = 0;
 $(document).ready(function() {
 
 
@@ -12,16 +13,16 @@ $(document).ready(function() {
 
 
   var failCount = 0,
-    score = 0,
     correctAnswer = 0,
     answer,firstCheck = true,
     arrowPicked = false;
 
 if(document.getElementById("beoordeling")){
     //score// = score/score+10 *100;
+    score = Math.floor(Math.random()*100);
     var status = (score>50)?"wakker":"te moe";
     var traffic = (score>50)?"auto":(score>30)?"bike":"te-voet";
-    document.getElementById("score").innerHTML = "<span>"+localStorage.score + "</span> "+ status;
+    document.getElementById("score").innerHTML = "<span>"+localStorage.score + "%</span> "+ status;
     document.getElementById("traffic").src= "design/elementen/"+traffic+".png";
 }
 
@@ -154,7 +155,7 @@ if(document.getElementById("beoordeling")){
 
 
   checkAnswer = function() {
-      if (answer === correctAnswer) {
+      if (answer == correctAnswer) {
         ++score;
       } else {
           if(firstCheck){
@@ -166,10 +167,8 @@ if(document.getElementById("beoordeling")){
              }
              firstCheck = false;
           }
-
-
-
       }
+      localStorage.score = score;
       console.log(failCount);
   };
 
