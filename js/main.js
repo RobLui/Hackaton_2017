@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
     var arr = ["background-red", "background-blue"];
     var audio = document.getElementById("audio");
-    
+
     function playAudio() {
         audio.play();
     }
@@ -39,8 +39,6 @@ $( document ).ready(function() {
     //         $('#count_num').html("1")
     //     });
     // });
-
-
 
     window.setInterval(function(){
         $('.imageclass img').remove();
