@@ -11,6 +11,7 @@ body {
 
 .red {
     color: red;
+    font-size: 3em;
 }
 
 .gold {
@@ -54,23 +55,27 @@ body {
 }
 
 .class-33 {
-    width: 33%;
+    width: 25vw;
     float: left;
     text-align: center;
 }
-
+.last{
+      width: auto;
+      float: left;
+}
 .top-2 {
-    margin-top: 8em;
+    margin-top: 5em;
 }
 
 .top-half {
     margin-top: 10%;
+
 }
 
 .dosis-class {
     text-align: center;
     color: #336600;
-    font-size: 5em;
+    font-size: 10em;
 }
 
 .imageclass img{
@@ -90,4 +95,11 @@ body {
 .background-red {
     background: red;
     border-radius: 50%;
+}
+.textenzo h1{
+  font-size: 5em;
+}
+h1{
+  margin: 0;
+  padding:0.3em;
 }
