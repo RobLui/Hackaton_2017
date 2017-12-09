@@ -9,8 +9,8 @@ $(document).ready(function() {
   var questionCounter = 0;
   var previousQuestion = -1;
 
-    var failCout = 0,score = 0;
-    var correctAnswer = 0,arrowPicked=false;
+  var failCout = 0,score = 0;
+  var correctAnswer = 0,arrowPicked=false;
 
   function playAudio() {
     audio.play();
@@ -66,26 +66,26 @@ $(document).ready(function() {
         return newTime;
     }
 
-    function show() {
+    var show = function show() {
         $time = document.getElementById('time');
         update();
     }
 
-    function update() {
+    var update = function update() {
         $time.innerHTML = formatTime(x.time());
     }
 
-    function start() {
+    var start = function start() {
         clocktimer = setInterval("update()", 1);
         x.start();
     }
 
-    function stop() {
+    var stop = function stop() {
         x.stop();
         clearInterval(clocktimer);
     }
 
-    function reset() {
+    var reset = function reset() {
         stop();
         x.reset();
         update();
