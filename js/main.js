@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    var arr = ['red','green','blue'];
+    var arr = ["background-red", "background-blue"];
 
     function testRandomImage() {
 
@@ -32,13 +32,13 @@ $( document ).ready(function() {
         i = Math.floor(Math.random()*imgs.length);
         $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
     }
+
     window.setInterval(function(){
         $('.imageclass img').remove();
         new testRandomImage();
-        // $('.imageclass img').addClass("background-red");
-        var idx =    Math.floor(Math.random() * arr.length);
-        $('.imageclass img').addClass("background-blue");
-
+        var idx = Math.floor(Math.random() * arr.length);
+        console.log(arr[idx]);
+        $('.imageclass img').addClass(arr[idx]);
     }, 2000);
 
 });
