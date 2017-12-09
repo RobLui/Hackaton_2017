@@ -17,6 +17,13 @@ $(document).ready(function() {
     answer,firstCheck = true,
     arrowPicked = false;
 
+if(document.getElementById("beoordeling").length > 0){
+    var status = (score>50)?"wakker":"te moe";
+    var traffic = (score>50)?"auto":(score>30)?"bike":"te-voet";
+    document.getElementById("score").innerHTML = "<span>"+localStorage.score + "%</span> "+ status;
+    document.getElementById("traffic").src= "/design/elementen/"+traffic+"png";
+}
+
   function playAudio() {
     audio.play();
   }
