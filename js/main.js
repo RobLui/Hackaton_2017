@@ -26,6 +26,8 @@ function checkKey(e) {
     }
     else if (e.keyCode == 83)
     {
+        // START BUTTON
         console.log("s key pressed")
+        location.href = 'pijlen.html';
     }
 }
