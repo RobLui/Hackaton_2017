@@ -6,7 +6,7 @@ $(document).ready(function() {
   var audio = document.getElementById("audio");
   var startDeltaT = 2000;
   var deltaT = startDeltaT;
-  var speedIncrease = 0.10;
+  var speedIncrease = 0.50;
   var questionCounter = 0;
   var previousQuestion = -1;
 
