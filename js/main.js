@@ -1,4 +1,20 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+
+
+  var arr = ["background-red", "background-blue"];
+  var audio = document.getElementById("audio");
+  var startDeltaT = 2000;
+  var deltaT = startDeltaT;
+  var speedIncrease = 0.05;
+  var questionCounter = 0;
+  var previousQuestion = -1;
+
+    var failCout = 0,score = 0;
+    var correctAnswer = 0,arrowPicked=false;
+
+  function playAudio() {
+    audio.play();
+  }
 
     var	clsStopwatch = function() {
         var	startAt	= 0;	// Time of last start / resume. (0 if not running)
@@ -74,47 +90,40 @@ $( document ).ready(function() {
         x.reset();
         update();
     }
+  
+  function testRandomImage() {
 
-    var arr = ["background-red", "background-blue"];
-    var audio = document.getElementById("audio");
-    var failCout = 0,score = 0;
-    var correctAnswer = 0,arrowPicked=false;
 
-    function playAudio() {
-        audio.play();
-    }
+    var path = 'design/elementen/images/',
+      people = [
+        '1.png',
+        '2.png',
+        '3.png',
+        '4.png',
+        '5.png',
+        '6.png',
+        '7.png',
+        '8.png',
+        '9.png',
+        '10.png',
+        '11.png',
+        '12.png',
+        '14.png',
+        '15.png',
+        '16.png',
+        '17.png',
+        '18.png',
+        '19.png',
+      ],
+      arrows = [
+        'pijl-links.png',
+        'pijl-rechts.png',
+      ];
 
-    function testRandomImage() {
-
-        var path = 'design/elementen/images/',
-            people = [
-                '1.png',
-                '2.png',
-                '3.png',
-                '4.png',
-                '5.png',
-                '6.png',
-                '7.png',
-                '8.png',
-                '9.png',
-                '10.png',
-                '11.png',
-                '12.png',
-                '14.png',
-                '15.png',
-                '16.png',
-                '17.png',
-                '18.png',
-                '19.png',
-            ],
-            arrows = [
-                'pijl-links.png',
-                'pijl-rechts.png',
-            ];
-
-        var imgs = Math.random() <= 0.3 ? arrows : people;
-        var i = Math.floor(Math.random()*imgs.length);
-        arrowPicked = false;
+    var imgs = Math.random() <= 0.3 ? arrows : people;
+    var i = Math.floor(Math.random() * imgs.length);
+  
+    arrowPicked = false;
         if(imgs[i] === "pijl-links.png"){
             correctAnswer=3;
             arrowPicked = true;
@@ -122,10 +131,12 @@ $( document ).ready(function() {
         if(imgs[i] === "pijl-rechts.png"){
             correctAnswer=4;
             arrowPicked = true;
-        }
-        $('.imageclass').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
-    }
+        }  
+    
+    $('.imageclass').append("<img src='" + path + imgs[i] + "'>").hide().fadeIn(deltaT);
+  }
 
+  
     function checkAnswer(answer){
         if(correctAnswer!== 0){
             if(answer === correctAnswer){
@@ -138,33 +149,30 @@ $( document ).ready(function() {
             }
         }
     }
-
-    // $("#count_num").delay(1000).queue(function() {
-    //     $('#count_num').html("2").delay(1000).queue(function() {
-    //         $('#count_num').html("1")
-    //     });
-    // });
-
-    window.setInterval(function(){
-        $('.imageclass img').remove();
-        new testRandomImage();
-        var idx = Math.floor(Math.random() * arr.length);
-        // console.log(arr[idx]);
-        if(!arrowPicked){
+  
+  window.setInterval(function() {
+    deltaT = deltaT * (1 - speedIncrease);
+    console.log(deltaT);
+    $('.imageclass img').remove();
+    new testRandomImage();
+    var idx = Math.floor(Math.random() * arr.length);
+    // console.log(arr[idx]);
+    if(!arrowPicked){
             correctAnswer = 1+idx;
         }
-        if(imgs[i] === "pijl-links.png")correctAnswer=1;
-        if(imgs[i] === "pijl-rechts.png")correctAnswer=2;
-        $('.imageclass img').addClass(arr[idx]);
-    }, 2000);
-    playAudio();
+    $('.imageclass img').addClass(arr[idx]);
+    questionCounter++;
+  }, deltaT);
+  playAudio();
+
 });
 //CHECK ON KEYS PRESSED
 document.onkeydown = checkKey;
 
 function checkKey(e) {
 
-    e = e || window.event;
+  e = e || window.event;
+
 
     if (e.keyCode == '38') {
 
@@ -200,9 +208,10 @@ function checkKey(e) {
     {
         console.log("s key pressed");
 
-        if(window.location.href.indexOf("index.html") > -1) {
-            location.href = 'pijlen.html';
-        }
+
+    if (window.location.href.indexOf("index.html") > -1) {
+      location.href = 'pijlen.html';
     }
+  }
 
 }
