@@ -5,11 +5,15 @@
 @import "/fonts/Dosis/Dosis-Regular.ttf";
 @import "/fonts/Dosis/Dosis-SemiBold.ttf";
 
-.m-top {
+body {
     font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+.m-top {
     margin-top: 10em;
     text-align: center;
 }
+
 .start-text {
     text-align: center;
 }
@@ -20,17 +24,19 @@
     height: 15em;
     width: 15em;
 }
+
 .class-100 {
     width: 100%;
 }
 
 .class-33 {
     width: 33%;
-    float:left;
+    float: left;
+    text-align: center;
 }
 
 .top-2 {
-    text-align: left;
+    margin-top: 8em;
 }
 
 .top-half {
@@ -38,8 +44,11 @@
 }
 
 .dosis-class {
-    font-family: 'Dosis', sans-serif;
     text-align: center;
     color: #336600;
     font-size: 5em;
+}
+img {
+    height: 50%%;
+    width: 50%;
 }
