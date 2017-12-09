@@ -19,10 +19,9 @@ $(document).ready(function() {
 
 if(document.getElementById("beoordeling")){
     //score// = score/score+10 *100;
-    score = Math.floor(Math.random()*100);
-    var status = (score>50)?"wakker":"te moe";
+    score = Math.floor(Math.random()*70);
     var traffic = (score>50)?"auto":(score>30)?"bike":"te-voet";
-    document.getElementById("score").innerHTML = "<span>"+localStorage.score + "%</span> "+ status;
+    document.getElementById("score").innerHTML = "<span>"+score + "%</span> wakker";
     document.getElementById("traffic").src= "design/elementen/"+traffic+".png";
 }
 
